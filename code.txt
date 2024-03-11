@@ -1,0 +1,535 @@
+Task 1.1
+
+mgpu@mgpu-VirtualBox:~$ pwd
+/home/mgpu
+
+----------------------------------------------
+Task 1.2
+
+mgpu@mgpu-VirtualBox:~$ ls -a
+.              Desktop    Pictures                   Videos
+..             Documents  .profile                   .Xauthority
+.bash_history  Downloads  Public                     .xorgxrdp.10.log
+.bash_logout   .gnupg     snap                       .xorgxrdp.10.log.old
+.bashrc        .local     .ssh                       .xsession-errors
+.cache         .mozilla   .sudo_as_admin_successful
+code.txt       Music      Templates
+.config        .pcsc10    thinclient_drives
+mgpu@mgpu-VirtualBox:~$ ls -a -l
+total 148
+drwxr-xr-x 19 mgpu mgpu  4096 мар  2 11:41 .
+drwxr-xr-x  4 root root  4096 мар  1 03:16 ..
+-rw-------  1 mgpu mgpu   357 мар  1 03:48 .bash_history
+-rw-r--r--  1 mgpu mgpu   220 окт 31 04:54 .bash_logout
+-rw-r--r--  1 mgpu mgpu  3771 окт 31 04:54 .bashrc
+drwxr-xr-x 13 mgpu mgpu  4096 мар  1 03:06 .cache
+-rw-rw-r--  1 mgpu mgpu     2 мар  2 11:41 code.txt
+drwx------ 11 mgpu mgpu  4096 окт 31 05:09 .config
+drwxr-xr-x  2 mgpu mgpu  4096 окт 31 04:59 Desktop
+drwxr-xr-x  2 mgpu mgpu  4096 окт 31 04:59 Documents
+drwxr-xr-x  2 mgpu mgpu  4096 окт 31 04:59 Downloads
+drwx------  3 mgpu mgpu  4096 окт 31 05:21 .gnupg
+drwxr-xr-x  3 mgpu mgpu  4096 окт 31 04:59 .local
+drwx------  4 mgpu mgpu  4096 мар  1 03:06 .mozilla
+drwxr-xr-x  2 mgpu mgpu  4096 окт 31 04:59 Music
+drwxrwxrwt  2 mgpu mgpu  4096 мар  1 03:46 .pcsc10
+drwxr-xr-x  2 mgpu mgpu  4096 окт 31 04:59 Pictures
+-rw-r--r--  1 mgpu mgpu   807 окт 31 04:54 .profile
+drwxr-xr-x  2 mgpu mgpu  4096 окт 31 04:59 Public
+drwx------  3 mgpu mgpu  4096 окт 31 05:00 snap
+drwx------  2 mgpu mgpu  4096 окт 31 05:21 .ssh
+-rw-r--r--  1 mgpu mgpu     0 мар  1 03:07 .sudo_as_admin_successful
+drwxr-xr-x  2 mgpu mgpu  4096 окт 31 04:59 Templates
+drwxrwxr-t  2 mgpu mgpu  4096 мар  1 03:10 thinclient_drives
+drwxr-xr-x  2 mgpu mgpu  4096 окт 31 04:59 Videos
+-rw-------  1 mgpu mgpu    61 мар  1 03:46 .Xauthority
+-rw-r--r--  1 mgpu mgpu 19254 мар  1 03:48 .xorgxrdp.10.log
+-rw-r--r--  1 mgpu mgpu 19461 мар  1 03:44 .xorgxrdp.10.log.old
+-rw-------  1 mgpu mgpu  5452 мар  1 03:46 .xsession-errors
+mgpu@mgpu-VirtualBox:~$ ls -a -l -h
+total 148K
+drwxr-xr-x 19 mgpu mgpu 4,0K мар  2 11:41 .
+drwxr-xr-x  4 root root 4,0K мар  1 03:16 ..
+-rw-------  1 mgpu mgpu  357 мар  1 03:48 .bash_history
+-rw-r--r--  1 mgpu mgpu  220 окт 31 04:54 .bash_logout
+-rw-r--r--  1 mgpu mgpu 3,7K окт 31 04:54 .bashrc
+drwxr-xr-x 13 mgpu mgpu 4,0K мар  1 03:06 .cache
+-rw-rw-r--  1 mgpu mgpu    2 мар  2 11:41 code.txt
+drwx------ 11 mgpu mgpu 4,0K окт 31 05:09 .config
+drwxr-xr-x  2 mgpu mgpu 4,0K окт 31 04:59 Desktop
+drwxr-xr-x  2 mgpu mgpu 4,0K окт 31 04:59 Documents
+drwxr-xr-x  2 mgpu mgpu 4,0K окт 31 04:59 Downloads
+drwx------  3 mgpu mgpu 4,0K окт 31 05:21 .gnupg
+drwxr-xr-x  3 mgpu mgpu 4,0K окт 31 04:59 .local
+drwx------  4 mgpu mgpu 4,0K мар  1 03:06 .mozilla
+drwxr-xr-x  2 mgpu mgpu 4,0K окт 31 04:59 Music
+drwxrwxrwt  2 mgpu mgpu 4,0K мар  1 03:46 .pcsc10
+drwxr-xr-x  2 mgpu mgpu 4,0K окт 31 04:59 Pictures
+-rw-r--r--  1 mgpu mgpu  807 окт 31 04:54 .profile
+drwxr-xr-x  2 mgpu mgpu 4,0K окт 31 04:59 Public
+drwx------  3 mgpu mgpu 4,0K окт 31 05:00 snap
+drwx------  2 mgpu mgpu 4,0K окт 31 05:21 .ssh
+-rw-r--r--  1 mgpu mgpu    0 мар  1 03:07 .sudo_as_admin_successful
+drwxr-xr-x  2 mgpu mgpu 4,0K окт 31 04:59 Templates
+drwxrwxr-t  2 mgpu mgpu 4,0K мар  1 03:10 thinclient_drives
+drwxr-xr-x  2 mgpu mgpu 4,0K окт 31 04:59 Videos
+-rw-------  1 mgpu mgpu   61 мар  1 03:46 .Xauthority
+-rw-r--r--  1 mgpu mgpu  19K мар  1 03:48 .xorgxrdp.10.log
+-rw-r--r--  1 mgpu mgpu  20K мар  1 03:44 .xorgxrdp.10.log.old
+-rw-------  1 mgpu mgpu 5,4K мар  1 03:46 .xsession-errors
+
+
+
+
+------------------------------------------------------
+Task 1.3
+
+gpu@mgpu-VirtualBox:~$ mkdir foo bar
+mgpu@mgpu-VirtualBox:~$ ls -l
+total 52
+drwxrwxr-x 2 mgpu mgpu 4096 мар  2 13:09 bar
+-rw-rw-r-- 1 mgpu mgpu 3986 мар  2 11:49 code.txt
+drwxr-xr-x 2 mgpu mgpu 4096 окт 31 04:59 Desktop
+drwxr-xr-x 2 mgpu mgpu 4096 окт 31 04:59 Documents
+drwxr-xr-x 2 mgpu mgpu 4096 окт 31 04:59 Downloads
+drwxrwxr-x 2 mgpu mgpu 4096 мар  2 13:09 foo
+drwxr-xr-x 2 mgpu mgpu 4096 окт 31 04:59 Music
+drwxr-xr-x 2 mgpu mgpu 4096 окт 31 04:59 Pictures
+drwxr-xr-x 2 mgpu mgpu 4096 окт 31 04:59 Public
+drwx------ 3 mgpu mgpu 4096 окт 31 05:00 snap
+drwxr-xr-x 2 mgpu mgpu 4096 окт 31 04:59 Templates
+drwxrwxr-t 2 mgpu mgpu 4096 мар  1 03:10 thinclient_drives
+drwxr-xr-x 2 mgpu mgpu 4096 окт 31 04:59 Videos
+mgpu@mgpu-VirtualBox:~$ mkdir baz
+mgpu@mgpu-VirtualBox:~$ la -l
+total 152
+drwxrwxr-x  2 mgpu mgpu  4096 мар  2 13:09 bar
+-rw-------  1 mgpu mgpu   357 мар  1 03:48 .bash_history
+-rw-r--r--  1 mgpu mgpu   220 окт 31 04:54 .bash_logout
+-rw-r--r--  1 mgpu mgpu  3771 окт 31 04:54 .bashrc
+drwxrwxr-x  2 mgpu mgpu  4096 мар  2 13:09 baz
+drwxr-xr-x 13 mgpu mgpu  4096 мар  1 03:06 .cache
+-rw-rw-r--  1 mgpu mgpu  3986 мар  2 11:49 code.txt
+drwx------ 13 mgpu mgpu  4096 мар  2 11:50 .config
+drwxr-xr-x  2 mgpu mgpu  4096 окт 31 04:59 Desktop
+drwxr-xr-x  2 mgpu mgpu  4096 окт 31 04:59 Documents
+drwxr-xr-x  2 mgpu mgpu  4096 окт 31 04:59 Downloads
+drwxrwxr-x  2 mgpu mgpu  4096 мар  2 13:09 foo
+drwx------  3 mgpu mgpu  4096 окт 31 05:21 .gnupg
+drwxr-xr-x  3 mgpu mgpu  4096 окт 31 04:59 .local
+drwx------  4 mgpu mgpu  4096 мар  1 03:06 .mozilla
+drwxr-xr-x  2 mgpu mgpu  4096 окт 31 04:59 Music
+drwxrwxrwt  2 mgpu mgpu  4096 мар  1 03:46 .pcsc10
+drwxr-xr-x  2 mgpu mgpu  4096 окт 31 04:59 Pictures
+-rw-r--r--  1 mgpu mgpu   807 окт 31 04:54 .profile
+drwxr-xr-x  2 mgpu mgpu  4096 окт 31 04:59 Public
+drwx------  3 mgpu mgpu  4096 окт 31 05:00 snap
+drwx------  2 mgpu mgpu  4096 окт 31 05:21 .ssh
+-rw-r--r--  1 mgpu mgpu     0 мар  1 03:07 .sudo_as_admin_successful
+drwxr-xr-x  2 mgpu mgpu  4096 окт 31 04:59 Templates
+drwxrwxr-t  2 mgpu mgpu  4096 мар  1 03:10 thinclient_drives
+drwxr-xr-x  2 mgpu mgpu  4096 окт 31 04:59 Videos
+-rw-------  1 mgpu mgpu    61 мар  1 03:46 .Xauthority
+-rw-r--r--  1 mgpu mgpu 19254 мар  1 03:48 .xorgxrdp.10.log
+-rw-r--r--  1 mgpu mgpu 19461 мар  1 03:44 .xorgxrdp.10.log.old
+-rw-------  1 mgpu mgpu  5452 мар  1 03:46 .xsession-errors
+mgpu@mgpu-VirtualBox:~$ rmdir bar
+mgpu@mgpu-VirtualBox:~$ la -l
+total 148
+-rw-------  1 mgpu mgpu   357 мар  1 03:48 .bash_history
+-rw-r--r--  1 mgpu mgpu   220 окт 31 04:54 .bash_logout
+-rw-r--r--  1 mgpu mgpu  3771 окт 31 04:54 .bashrc
+drwxrwxr-x  2 mgpu mgpu  4096 мар  2 13:09 baz
+drwxr-xr-x 13 mgpu mgpu  4096 мар  1 03:06 .cache
+-rw-rw-r--  1 mgpu mgpu  3986 мар  2 11:49 code.txt
+drwx------ 13 mgpu mgpu  4096 мар  2 11:50 .config
+drwxr-xr-x  2 mgpu mgpu  4096 окт 31 04:59 Desktop
+drwxr-xr-x  2 mgpu mgpu  4096 окт 31 04:59 Documents
+drwxr-xr-x  2 mgpu mgpu  4096 окт 31 04:59 Downloads
+drwxrwxr-x  2 mgpu mgpu  4096 мар  2 13:09 foo
+drwx------  3 mgpu mgpu  4096 окт 31 05:21 .gnupg
+drwxr-xr-x  3 mgpu mgpu  4096 окт 31 04:59 .local
+drwx------  4 mgpu mgpu  4096 мар  1 03:06 .mozilla
+drwxr-xr-x  2 mgpu mgpu  4096 окт 31 04:59 Music
+drwxrwxrwt  2 mgpu mgpu  4096 мар  1 03:46 .pcsc10
+drwxr-xr-x  2 mgpu mgpu  4096 окт 31 04:59 Pictures
+-rw-r--r--  1 mgpu mgpu   807 окт 31 04:54 .profile
+drwxr-xr-x  2 mgpu mgpu  4096 окт 31 04:59 Public
+drwx------  3 mgpu mgpu  4096 окт 31 05:00 snap
+drwx------  2 mgpu mgpu  4096 окт 31 05:21 .ssh
+-rw-r--r--  1 mgpu mgpu     0 мар  1 03:07 .sudo_as_admin_successful
+drwxr-xr-x  2 mgpu mgpu  4096 окт 31 04:59 Templates
+drwxrwxr-t  2 mgpu mgpu  4096 мар  1 03:10 thinclient_drives
+drwxr-xr-x  2 mgpu mgpu  4096 окт 31 04:59 Videos
+-rw-------  1 mgpu mgpu    61 мар  1 03:46 .Xauthority
+-rw-r--r--  1 mgpu mgpu 19254 мар  1 03:48 .xorgxrdp.10.log
+-rw-r--r--  1 mgpu mgpu 19461 мар  1 03:44 .xorgxrdp.10.log.old
+-rw-------  1 mgpu mgpu  5452 мар  1 03:46 .xsession-errors
+mgpu@mgpu-VirtualBox:~$ mkdir -p try/test
+mgpu@mgpu-VirtualBox:~$ ls -l -R
+.:
+total 56
+drwxrwxr-x 2 mgpu mgpu 4096 мар  2 13:09 baz
+-rw-rw-r-- 1 mgpu mgpu 3986 мар  2 11:49 code.txt
+drwxr-xr-x 2 mgpu mgpu 4096 окт 31 04:59 Desktop
+drwxr-xr-x 2 mgpu mgpu 4096 окт 31 04:59 Documents
+drwxr-xr-x 2 mgpu mgpu 4096 окт 31 04:59 Downloads
+drwxrwxr-x 2 mgpu mgpu 4096 мар  2 13:09 foo
+drwxr-xr-x 2 mgpu mgpu 4096 окт 31 04:59 Music
+drwxr-xr-x 2 mgpu mgpu 4096 окт 31 04:59 Pictures
+drwxr-xr-x 2 mgpu mgpu 4096 окт 31 04:59 Public
+drwx------ 3 mgpu mgpu 4096 окт 31 05:00 snap
+drwxr-xr-x 2 mgpu mgpu 4096 окт 31 04:59 Templates
+drwxrwxr-t 2 mgpu mgpu 4096 мар  1 03:10 thinclient_drives
+drwxrwxr-x 3 mgpu mgpu 4096 мар  2 13:10 try
+drwxr-xr-x 2 mgpu mgpu 4096 окт 31 04:59 Videos
+
+./baz:
+total 0
+
+./Desktop:
+total 0
+
+./Documents:
+total 0
+
+./Downloads:
+total 0
+
+./foo:
+total 0
+
+./Music:
+total 0
+
+./Pictures:
+total 0
+
+./Public:
+total 0
+
+./snap:
+total 4
+drwxr-xr-x 5 mgpu mgpu 4096 мар  1 03:44 snap-store
+
+./snap/snap-store:
+total 12
+drwxr-xr-x 4 mgpu mgpu 4096 окт 31 05:00 638
+drwxr-xr-x 4 mgpu mgpu 4096 мар  1 03:44 959
+drwxr-xr-x 3 mgpu mgpu 4096 окт 31 05:00 common
+lrwxrwxrwx 1 mgpu mgpu    3 мар  1 03:44 current -> 959
+
+./snap/snap-store/638:
+total 0
+
+./snap/snap-store/959:
+total 0
+
+./snap/snap-store/common:
+total 0
+
+./Templates:
+total 0
+
+./thinclient_drives:
+total 0
+
+./try:
+total 4
+drwxrwxr-x 2 mgpu mgpu 4096 мар  2 13:10 test
+
+./try/test:
+total 0
+
+./Videos:
+total 0
+
+-----------------------------------------
+Task 1.4
+
+mgpu@mgpu-VirtualBox:~$ pwd
+/home/mgpu
+mgpu@mgpu-VirtualBox:~$ cd foo
+mgpu@mgpu-VirtualBox:~/foo$ cd ..
+mgpu@mgpu-VirtualBox:~$ pwd
+/home/mgpu
+mgpu@mgpu-VirtualBox:~$ cd try/test
+mgpu@mgpu-VirtualBox:~/try/test$ pwd
+/home/mgpu/try/test
+mgpu@mgpu-VirtualBox:~/try/test$ cd ../..
+mgpu@mgpu-VirtualBox:~$ cd try/test
+mgpu@mgpu-VirtualBox:~/try/test$ pwd
+/home/mgpu/try/test
+mgpu@mgpu-VirtualBox:~/try/test$ cd ~
+mgpu@mgpu-VirtualBox:~$ pwd
+/home/mgpu
+mgpu@mgpu-VirtualBox:~$ 
+
+
+
+-------------------------------------------------
+Task 1.5
+
+mgpu@mgpu-VirtualBox:~$ nano a_file.txt
+mgpu@mgpu-VirtualBox:~$ 
+
+
+
+--------------------------------------------------
+Task 1.6
+
+mgpu@mgpu-VirtualBox:~$ cat a_file.txt
+lygin mv
+mgpu@mgpu-VirtualBox:~$ 
+
+
+
+--------------------------------------------------
+Task 1.7
+
+gpu@mgpu-VirtualBox:~$ cp a_file.txt b_file.txt
+mgpu@mgpu-VirtualBox:~$ ls -l
+total 72
+-rw-rw-r-- 1 mgpu mgpu     9 мар  2 13:17 a_file.txt
+drwxrwxr-x 2 mgpu mgpu  4096 мар  2 13:09 baz
+-rw-rw-r-- 1 mgpu mgpu     9 мар  2 13:20 b_file.txt
+-rw-rw-r-- 1 mgpu mgpu 10457 мар  2 13:18 code.txt
+drwxr-xr-x 2 mgpu mgpu  4096 окт 31 04:59 Desktop
+drwxr-xr-x 2 mgpu mgpu  4096 окт 31 04:59 Documents
+drwxr-xr-x 2 mgpu mgpu  4096 окт 31 04:59 Downloads
+drwxrwxr-x 2 mgpu mgpu  4096 мар  2 13:09 foo
+drwxr-xr-x 2 mgpu mgpu  4096 окт 31 04:59 Music
+drwxr-xr-x 2 mgpu mgpu  4096 окт 31 04:59 Pictures
+drwxr-xr-x 2 mgpu mgpu  4096 окт 31 04:59 Public
+drwx------ 3 mgpu mgpu  4096 окт 31 05:00 snap
+drwxr-xr-x 2 mgpu mgpu  4096 окт 31 04:59 Templates
+drwxrwxr-t 2 mgpu mgpu  4096 мар  1 03:10 thinclient_drives
+drwxrwxr-x 3 mgpu mgpu  4096 мар  2 13:10 try
+drwxr-xr-x 2 mgpu mgpu  4096 окт 31 04:59 Videos
+mgpu@mgpu-VirtualBox:~$ cp a_file.txt foo/a_file.txt
+mgpu@mgpu-VirtualBox:~$ ls -l -R
+.:
+total 72
+-rw-rw-r-- 1 mgpu mgpu     9 мар  2 13:17 a_file.txt
+drwxrwxr-x 2 mgpu mgpu  4096 мар  2 13:09 baz
+-rw-rw-r-- 1 mgpu mgpu     9 мар  2 13:20 b_file.txt
+-rw-rw-r-- 1 mgpu mgpu 10457 мар  2 13:18 code.txt
+drwxr-xr-x 2 mgpu mgpu  4096 окт 31 04:59 Desktop
+drwxr-xr-x 2 mgpu mgpu  4096 окт 31 04:59 Documents
+drwxr-xr-x 2 mgpu mgpu  4096 окт 31 04:59 Downloads
+drwxrwxr-x 2 mgpu mgpu  4096 мар  2 13:21 foo
+drwxr-xr-x 2 mgpu mgpu  4096 окт 31 04:59 Music
+drwxr-xr-x 2 mgpu mgpu  4096 окт 31 04:59 Pictures
+drwxr-xr-x 2 mgpu mgpu  4096 окт 31 04:59 Public
+drwx------ 3 mgpu mgpu  4096 окт 31 05:00 snap
+drwxr-xr-x 2 mgpu mgpu  4096 окт 31 04:59 Templates
+drwxrwxr-t 2 mgpu mgpu  4096 мар  1 03:10 thinclient_drives
+drwxrwxr-x 3 mgpu mgpu  4096 мар  2 13:10 try
+drwxr-xr-x 2 mgpu mgpu  4096 окт 31 04:59 Videos
+
+./baz:
+total 0
+
+./Desktop:
+total 0
+
+./Documents:
+total 0
+
+./Downloads:
+total 0
+
+./foo:
+total 4
+-rw-rw-r-- 1 mgpu mgpu 9 мар  2 13:21 a_file.txt
+
+./Music:
+total 0
+
+./Pictures:
+total 0
+
+./Public:
+total 0
+
+./snap:
+total 4
+drwxr-xr-x 5 mgpu mgpu 4096 мар  1 03:44 snap-store
+
+./snap/snap-store:
+total 12
+drwxr-xr-x 4 mgpu mgpu 4096 окт 31 05:00 638
+drwxr-xr-x 4 mgpu mgpu 4096 мар  1 03:44 959
+drwxr-xr-x 3 mgpu mgpu 4096 окт 31 05:00 common
+lrwxrwxrwx 1 mgpu mgpu    3 мар  1 03:44 current -> 959
+
+./snap/snap-store/638:
+total 0
+
+./snap/snap-store/959:
+total 0
+
+./snap/snap-store/common:
+total 0
+
+./Templates:
+total 0
+
+./thinclient_drives:
+total 0
+
+./try:
+total 4
+drwxrwxr-x 2 mgpu mgpu 4096 мар  2 13:10 test
+
+./try/test:
+total 0
+
+./Videos:
+total 0
+
+
+
+--------------------------------------------------
+Task 1.8
+
+mgpu@mgpu-VirtualBox:~$ ls -l
+total 76
+-rw-rw-r-- 1 mgpu mgpu     9 мар  2 13:17 a_file.txt
+drwxrwxr-x 2 mgpu mgpu  4096 мар  2 13:09 baz
+-rw-rw-r-- 1 mgpu mgpu     9 мар  2 13:20 b_file.txt
+-rw-rw-r-- 1 mgpu mgpu 13255 мар  2 13:22 code.txt
+drwxr-xr-x 2 mgpu mgpu  4096 окт 31 04:59 Desktop
+drwxr-xr-x 2 mgpu mgpu  4096 окт 31 04:59 Documents
+drwxr-xr-x 2 mgpu mgpu  4096 окт 31 04:59 Downloads
+drwxrwxr-x 2 mgpu mgpu  4096 мар  2 13:21 foo
+drwxr-xr-x 2 mgpu mgpu  4096 окт 31 04:59 Music
+drwxr-xr-x 2 mgpu mgpu  4096 окт 31 04:59 Pictures
+drwxr-xr-x 2 mgpu mgpu  4096 окт 31 04:59 Public
+drwx------ 3 mgpu mgpu  4096 окт 31 05:00 snap
+drwxr-xr-x 2 mgpu mgpu  4096 окт 31 04:59 Templates
+drwxrwxr-t 2 mgpu mgpu  4096 мар  1 03:10 thinclient_drives
+drwxrwxr-x 3 mgpu mgpu  4096 мар  2 13:10 try
+drwxr-xr-x 2 mgpu mgpu  4096 окт 31 04:59 Videos
+mgpu@mgpu-VirtualBox:~$ rm a_file.txt
+mgpu@mgpu-VirtualBox:~$ ls -l
+total 72
+drwxrwxr-x 2 mgpu mgpu  4096 мар  2 13:09 baz
+-rw-rw-r-- 1 mgpu mgpu     9 мар  2 13:20 b_file.txt
+-rw-rw-r-- 1 mgpu mgpu 13255 мар  2 13:22 code.txt
+drwxr-xr-x 2 mgpu mgpu  4096 окт 31 04:59 Desktop
+drwxr-xr-x 2 mgpu mgpu  4096 окт 31 04:59 Documents
+drwxr-xr-x 2 mgpu mgpu  4096 окт 31 04:59 Downloads
+drwxrwxr-x 2 mgpu mgpu  4096 мар  2 13:21 foo
+drwxr-xr-x 2 mgpu mgpu  4096 окт 31 04:59 Music
+drwxr-xr-x 2 mgpu mgpu  4096 окт 31 04:59 Pictures
+drwxr-xr-x 2 mgpu mgpu  4096 окт 31 04:59 Public
+drwx------ 3 mgpu mgpu  4096 окт 31 05:00 snap
+drwxr-xr-x 2 mgpu mgpu  4096 окт 31 04:59 Templates
+drwxrwxr-t 2 mgpu mgpu  4096 мар  1 03:10 thinclient_drives
+drwxrwxr-x 3 mgpu mgpu  4096 мар  2 13:10 try
+drwxr-xr-x 2 mgpu mgpu  4096 окт 31 04:59 Videos
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------
+Task 2.1
+
+
+mgpu@mgpu-VirtualBox:~$ sudo su hadoop
+[sudo] password for mgpu: 
+hadoop@mgpu-VirtualBox:/home/mgpu$ cd
+hadoop@mgpu-VirtualBox:~$ ls
+hadoop  hadoop-3.3.6.tar.gz  hdfs
+hadoop@mgpu-VirtualBox:~$ start-dfs.sh
+Starting namenodes on [0.0.0.0]
+Starting datanodes
+Starting secondary namenodes [mgpu-VirtualBox]
+hadoop@mgpu-VirtualBox:~$ start-yarn.sh
+Starting resourcemanager
+Starting nodemanagers
+hadoop@mgpu-VirtualBox:~$ jps
+4145 Jps
+3155 DataNode
+3781 NodeManager
+3014 NameNode
+3356 SecondaryNameNode
+3644 ResourceManager
+hadoop@mgpu-VirtualBox:~$ 
+
+hadoop@mgpu-VirtualBox:~$ ls
+foo  hadoop  hadoop-3.3.6.tar.gz  hdfs  test
+hadoop@mgpu-VirtualBox:~$ ls foo
+a_file.txt
+
+
+
+
+
+
+-----------------------------------------------------------
+Task 2.2
+
+hadoop@mgpu-VirtualBox:~$ nano a_file.txt
+hadoop@mgpu-VirtualBox:~$ ls
+a_file.txt  hadoop  hadoop-3.3.6.tar.gz  hdfs
+hadoop@mgpu-VirtualBox:~$ hadoop fs -copyFromLocal a_file.txt
+hadoop@mgpu-VirtualBox:~$ hadoop fs -cp a_file.txt b_file.txt
+
+-----------------------------------------------------------
+Task 2.3
+
+hadoop@mgpu-VirtualBox:~$ hadoop fs -cp a_file.txt b_file.txt
+cp: `b_file.txt': File exists
+hadoop@mgpu-VirtualBox:~$ hadoop fs -ls
+Found 2 items
+-rw-r--r--   1 hadoop supergroup          6 2024-03-04 10:36 a_file.txt
+-rw-r--r--   1 hadoop supergroup          6 2024-03-04 10:40 b_file.txt
+
+
+
+
+---------------------------------------------------------------
+Task 2.4
+
+
+adoop@mgpu-VirtualBox:~$ hadoop fs -copyToLocal b_file.txt
+hadoop@mgpu-VirtualBox:~$ ls
+a_file.txt  b_file.txt  hadoop  hadoop-3.3.6.tar.gz  hdfs
+
+
+
+---------------------------------------------------------------
+Task 2.5
+
+
+hadoop@mgpu-VirtualBox:~$ hadoop fs -cat a_file.txt
+lygin
+
+
+
+--------------------------------------------------------------
+Task 2.6
+
+hadoop@mgpu-VirtualBox:~$ hadoop fs -rm a_file.txt
+Deleted a_file.txt
+hadoop@mgpu-VirtualBox:~$ ls
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------
+Task 3.1
+
